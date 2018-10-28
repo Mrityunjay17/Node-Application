@@ -2,8 +2,8 @@ const {getBanner}=require("./../model/GetBanner.mjs");
 const fs =require("fs");
 
 /**
- * @function getId()
- * @returns {string} it's return String unique id 
+ * @function getId() it's return String unique id
+ * @returns {string}  
  */
 function getId(){
     return Math.random().toString(35).substr(2, 10);
