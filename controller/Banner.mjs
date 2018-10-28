@@ -1,9 +1,14 @@
 const {getBanner}=require("./../model/GetBanner.mjs"); 
 const fs =require("fs");
 
+/**
+ * @function getId()
+ * @returns {string} it's return String unique id 
+ */
 function getId(){
     return Math.random().toString(35).substr(2, 10);
 }
+
 var generateBanner = function(text,callBack){
     if(callBack==undefined){
         callBack=function(){};
