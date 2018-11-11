@@ -7,6 +7,7 @@ const {generateBanner}=require('./controller/Banner.mjs');
 
 var app=express();
 
+app.disable('x-powered-by');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/css",express.static(path.join(__dirname,"/public/css")));
 app.use("/js",express.static(path.join(__dirname,"/public/js")));
